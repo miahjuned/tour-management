@@ -1,0 +1,41 @@
+{
+  "short_name": "DOA",
+  "name": "Department of Accounting || Tour Management",
+  "theme_color": "red",
+  "background_color": "#14a800",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "logo384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "logo512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+    
+  ]
+
+}
+
+
