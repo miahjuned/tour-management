@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
 
+import {firebaseConfig} from "./firebase.config";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import Home from './Pages/Home/Home';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { createContext, useState } from "react";
+
+export const userContext = createContext();
 function App() {
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const [user, setUser] = useState({});
+
+  const contextData = { user, setUser}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <userContext.Provider value={contextData}>
+      <Router>
+        {/* <SmoothScroll></SmoothScroll> */}
+        <Switch>
+
+          <Route exact path="/" component={Home} />
+          </Switch>
+      </Router>
+     
+    </userContext.Provider>
   );
 }
 
