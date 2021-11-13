@@ -5,8 +5,8 @@ import { getAnalytics } from "firebase/analytics";
 import Home from './Pages/Home/Home';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { createContext, useState } from "react";
-
 export const userContext = createContext();
+
 function App() {
   
   // Initialize Firebase

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+// import '../node_modules/tailwindcss/dist/base.min.css';
 import 'tailwindcss/dist/base.min.css';
 
 

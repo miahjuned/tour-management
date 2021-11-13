@@ -1,23 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaCartPlus } from 'react-icons/fa';
+import { NavbarLogo } from '../../../Style/Style';
 
 const Logo = ({closeMobileMenu}) => {
     return (
         <Link to='/' 
             onClick={closeMobileMenu} 
-            className='flex justify-self-start cursor-pointer text-xl'
+            className='MobileMenu'
         >
-            {/* <FaCartPlus 
-                className="mr-3 text-white text-3xl" 
-                 /> */}
-            <strong 
-                className='uppercase text-gray-200 font-bold text-normal md:font-bold md:text-xl'>
-                {/* Mamar */}
-                
-                    Shop by Department
-                {/* <span  className='text-red-600'> Dukan  </span> */}
-            </strong>
+            <NavbarLogo >Department of Accounting</NavbarLogo>
             
         </Link>
     );

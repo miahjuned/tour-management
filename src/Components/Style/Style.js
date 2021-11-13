@@ -1,16 +1,20 @@
 import tw from 'twin.macro';
 
-// *************** SIdebar ********************
-export const SidebarContainer = tw.div`md:w-1/6 md:h-screen h-full w-full bg-gray-900 overflow-y-scroll`;
-export const SidebarDiv = tw.div`h-full md:fixed text-white overflow-y-scroll md:w-1/6`;
-export const SidebarBtn = tw.button`bg-gray-500 hover:bg-red-700 focus:bg-blue-500 border-0 m-4 p-4 rounded-2xl`;
+// *************** Navbar ********************
+export const NavbarContainer = tw.nav`capitalize  flex justify-between items-center h-16  shadow-sm font-sans bg-gray-900`;
 
-// **************** Table *****************
-export const Table = tw.table`w-full font-medium md:mx-4 mt-20 tracking-tight`;
-export const TableHeadData = tw.th`font-bold tracking-tight bg-gray-300 p-2 text-gray-800`;
-export const TableBodyRow = tw.tr`border-gray-900 border bg-gray-200 hover:bg-gray-400 hover:shadow-lg`;
-export const TableBodyData = tw.td`py-2 px-5`;
+export const NavbarUl = tw.ul`text-white text-center md:flex hidden`;
+export const NavbarLi = tw.li`flex items-center `;
 
-// Dashboard h2 title
-export const DashboardContainer = tw.div`flex flex-wrap`;
-export const DashboardTitle = tw.h2` text-red-600 py-2 border-l-4 pl-3 border-red-600`;
+export const SocialMediaUl = tw.ul`md:flex text-white text-center hidden`;
+export const SocialMediaLi = tw.li`transition-all duration-500 hover:text-gray-800 pr-5`;
+
+export const NavbarLogo = tw.strong`uppercase text-gray-200 font-bold  md:font-bold md:text-xl`;
+
+export const NavbarToggle = tw.div`px-4 cursor-pointer md:hidden`;
+export const NavbarToggleContainer = tw.div`grid grid-rows-4  items-center text-white pb-10`;
+
+// *************** Bottom bar ********************
+export const BottomContainer = tw.div`md:hidden bottom-0 left-0 right-0 fixed z-50 flex justify-center items-center w-full bg-gray-900`;
+export const BottomBtnContainer = tw.div`relative flex-1 items-center flex justify-center `;
+export const BottomBtn= tw.button`w-10 h-10 hover:bg-red-600 px-1 text-white`;
