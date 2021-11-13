@@ -6,7 +6,7 @@ import { BottomBtn, BottomBtnContainer, BottomContainer } from '../../Style/Styl
 
 const BottomBar = () => {
     return (
-        <BottomContainer>
+        <BottomContainer style={{backgroundColor:'#022335'}}>
             <BottomBtnContainer>
                 <BottomBtn>
                     <AiOutlineHome size={30}></AiOutlineHome>
