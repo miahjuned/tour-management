@@ -21,7 +21,8 @@ const NavbarSection = ({ toggle, closeMobileMenu, isOpen }) => {
 
   return (
     <Fragment>
-      <NavbarContainer role="navigation">
+      <NavbarContainer role="navigation" style={{backgroundColor:'#022335'}}>
+      {/* <NavbarContainer role="navigation"> */}
         <Logo closeMobileMenu={closeMobileMenu} />
 
         {/*============== Toogle menu ===========*/}
@@ -46,7 +47,7 @@ const NavbarSection = ({ toggle, closeMobileMenu, isOpen }) => {
                     
                   );
                 })}
-                
+
           <NavbarLi>
               {
                 user.role === "user" &&  <Link to='/user/dashboard'  className='navbarLiItem'>

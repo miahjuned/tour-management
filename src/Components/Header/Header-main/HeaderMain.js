@@ -4,10 +4,12 @@ import BottomBar from '../BottomBar/BottomBar';
 
 const HeaderMain = () => {
     return (
-        <div>
-            <Navbar/>
-            <BottomBar/>
-        </div>
+        <header className='header'>
+            <section className='header-section'>
+                <Navbar/>
+                <BottomBar/>
+            </section>
+        </header>
     );
 };
 

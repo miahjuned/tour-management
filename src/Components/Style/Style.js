@@ -1,7 +1,7 @@
 import tw from 'twin.macro';
 
 // *************** Navbar ********************
-export const NavbarContainer = tw.nav`capitalize  flex justify-between items-center h-16  shadow-sm font-sans bg-gray-900`;
+export const NavbarContainer = tw.nav`capitalize  flex justify-between items-center h-16  shadow-sm font-sans`;
 
 export const NavbarUl = tw.ul`text-white text-center md:flex hidden`;
 export const NavbarLi = tw.li`flex items-center `;
