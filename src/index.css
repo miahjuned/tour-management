@@ -43,3 +43,33 @@ html, body, input{
   /* background: rgb(176, 178, 180)  !important; */
 
 }
+
+/* button color */
+.primary_BTN {
+  color: #fff;
+  background-color: #dd2400;
+  border: 1px solid #dd2400;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.primary_BTN:hover {
+  color: #dd2400;
+  background-color: #fff;
+  border: 1px solid #dd2400;
+}
+.primary_BTN_Outline {
+  color: #dd2400;
+  background-color: #dd250005;
+  border: 1px solid #dd2400;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.primary_BTN_Outline:hover {
+  background-color: #dd2500;
+  color: #fff;
+  border: 1px solid #dd2400;
+}
