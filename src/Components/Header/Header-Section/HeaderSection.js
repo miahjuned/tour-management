@@ -11,7 +11,7 @@ const HeaderSection = () => {
         <HeaderContainer>
             <article>
                 <HeaderLeftContent>
-                    <HeaderSpan className=''>TOUR</HeaderSpan>
+                    <HeaderSpan >TOUR</HeaderSpan>
 
                     <HeaderTitle>
                         BIGGEST 
@@ -22,7 +22,7 @@ const HeaderSection = () => {
 
                     <LocationContainer>
                         <Location> 
-                            <MdLocationOn size={30} style={{color: '#dd2500bd', paddingRight: '2px'}}/>
+                            <MdLocationOn size={30} style={{color: '#f87171', paddingRight: '2px'}}/>
                             <p>Bisnakandi, Sylhet</p>
                         </Location>
                         <Location>
