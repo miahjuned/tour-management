@@ -50,6 +50,24 @@ html, body, input{
 
 }
 
+/* Slider dots */
+.slick-dots li button:before {
+  font-size: 15px !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  /* opacity: 0.9 !important; */
+  color: #dd2400 !important;
+}
+
+.slick-dots li button:before {
+  color: #fff !important;
+}
+
+.slick-dots li button:before {
+  color: #022335 !important;
+}
 /* button color */
 .primary_BTN {
   color: #fff;
