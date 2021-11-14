@@ -1,7 +1,7 @@
 import tw from 'twin.macro';
 
 // *************** Global ********************
-export const MainContainer = tw.div` md:px-10 mx-auto px-5 py-10`;
+export const MainContainer = tw.div` md:px-10 mx-auto px-5 py-16`;
 
 // *************** Navbar ********************
 export const NavbarMain = tw.nav`mx-auto px-5`;
@@ -41,7 +41,7 @@ export const HeaderTitle = tw.h1`tracking-tighter text-6xl font-extrabold `;
 export const HeaderTitleSpan = tw.span`tracking-tighter capitalize text-gray-50 text-5xl font-extrabold`;
 
 export const HeaderRightContent = tw.div`h-full w-full`;
-export const HeaderRightVideo = tw.video`h-full w-full rounded-lg`;
+export const HeaderRightVideo = tw.video`h-full w-full rounded-lg my-5 md:mt-0`;
 // *************** Header section Location ********************
 
 export const LocationContainer = tw.div`w-8/12 flex justify-between items-center pt-5`;
@@ -61,16 +61,16 @@ export const CountdownTimerTitle = tw.p`font-semibold text-gray-400`;
 export const AboutContainer = tw.div`grid md:grid-cols-2 grid-cols-1  py-10 rounded shadow-lg `;
 export const AboutLeftContent = tw.div``;
 
-export const AboutOverview = tw.div`text-center  uppercase `;
-export const AboutSubTitle = tw.h2`tracking-tighter text-red-600 text-xl font-bold `;
-export const AboutSubTitleBottom = tw.h2`tracking-tighter text-gray-900 text-2xl font-extrabold `;
-export const Underline = tw.div` border-dashed  border-b-2 border-red-600 rounded w-2/12   mb-10 `;
+export const AboutOverview = tw.div`text-center  uppercase mb-20`;
+export const AboutSubTitle = tw.h2`tracking-tight text-red-600 text-xl font-bold `;
+export const AboutSubTitleBottom = tw.h2`tracking-tight text-gray-800 text-3xl font-extrabold `;
+export const Underline = tw.div` border-dashed  border-b-2 border-red-600 rounded w-2/12   mb-20 `;
 
 export const AboutArrow = tw.span`h-20 w-10 `;
 export const AboutArrowImg = tw.img` w-8/12 h-32`;
 
 
-export const AboutRightContent = tw.div`pl-5 text-left bg-gray-50`;
+export const AboutRightContent = tw.div`pl-5 text-left bg-gray-50 mt-10 md:mt-0`;
 export const AboutSubTitleRight = tw.h2`tracking-tighter capitalize text-gray-800 text-xl font-bold px-3 border-l-2 border-red-600 pb-1`;
 export const AboutTitle = tw.h2`tracking-tighter text-red-600 text-5xl font-extrabold px-3 uppercase`;
 export const AboutSubTitleHeading = tw.span`tracking-tighter text-gray-700 text-4xl font-extrabold px-3`;
@@ -83,3 +83,7 @@ export const OverlayMain = tw.div`grid md:grid-cols-4 grid-cols-2`;
 export const OverlayContent = tw.div`pt-5 flex items-center text-gray-50 font-semibold `;
 export const OverlayStrongContent = tw.strong`tracking-tighter text-gray-50 text-3xl font-extrabold `;
 export const OverlayItems = tw.div`text-center`;
+
+// *************** GALLERY ********************
+export const GALLERYMain = tw.div`grid md:grid-cols-4 grid-cols-2 `;
+export const GALLERYImg = tw.div`w-8/12 bg-red-600`;

@@ -83,9 +83,10 @@ html, body, input{
 /* Overlay */
 .Overlay {
   background-image: url('./img//depImg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px 0;
 }
 .Overlay-section {
   background-color: #022335d5;
@@ -99,4 +100,14 @@ html, body, input{
   border-radius: 10px;
   background-color: #dd2500;
   color: #f1f7ff;
+}
+
+/* gallery */
+.gallery-img{
+  height: 350px;
+  width: 350x;
+}
+.imgs{
+  height: 100%;
+  width: 100%;
 }
