@@ -87,3 +87,18 @@ export const OverlayItems = tw.div`text-center`;
 // *************** GALLERY ********************
 export const GALLERYMain = tw.div`grid md:grid-cols-4 grid-cols-2 `;
 export const GALLERYImg = tw.div`w-8/12 bg-red-600`;
+
+
+// *************** Blog ********************
+export const BlogContainer = tw.div`grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10`;
+
+export const BlogPost = tw.div`rounded overflow-hidden shadow-lg`;
+export const BlogPostTitle = tw.div`hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25`;
+export const BlogPostsCategory = tw.div`cursor-pointer absolute bottom-0 left-0 bg-red-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-red-600 transition duration-500 ease-in-out`;
+export const BlogPostsDate = tw.div`text-sm absolute top-0 right-0 bg-red-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-red-600 transition duration-500 ease-in-out`;
+export const BlogPostsDescriptionContainer = tw.div`px-6 py-4`;
+export const BlogPostsDescription = tw.h3`text-sm absolute top-0 right-0 bg-red-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-red-600 transition duration-500 ease-in-out`;
+export const BlogPostsShortDescription = tw.p`text-gray-500 text-sm`;
+export const BlogPostsReadingContainer = tw.div`px-6 py-4 flex flex-row items-center`;
+export const BlogPostsReading= tw.span`py-1 text-sm font-normal text-gray-900 mr-1 flex items-center`;
+
