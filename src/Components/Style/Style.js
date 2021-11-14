@@ -63,7 +63,7 @@ export const AboutLeftContent = tw.div``;
 
 export const AboutOverview = tw.div`text-center  uppercase mb-20`;
 export const AboutSubTitle = tw.h2`tracking-tight text-red-600 text-xl font-bold `;
-export const AboutSubTitleBottom = tw.h2`tracking-tight text-gray-800 text-3xl font-extrabold `;
+export const AboutSubTitleBottom = tw.h2`tracking-tight text-gray-700 text-3xl font-extrabold `;
 export const Underline = tw.div` border-dashed  border-b-2 border-red-600 rounded w-2/12   mb-20 `;
 
 export const AboutArrow = tw.span`h-20 w-10 `;
