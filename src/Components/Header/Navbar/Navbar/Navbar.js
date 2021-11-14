@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { NavbarMain } from '../../../Style/Style';
 import Menu from '../Menu/Menu';
 import ToggleMenu from '../ToggleMenu/ToggleMenu';
 
@@ -28,7 +29,7 @@ const Navbar = () => {
     })
 
     return (
-        <div className='mx-auto px-5 primary_BG_color'>
+        <NavbarMain style={{backgroundColor:'#022335'}}>
             <Menu 
                 isOpen={isOpen} 
                 closeMobileMenu={closeMobileMenu} 
@@ -37,7 +38,7 @@ const Navbar = () => {
                 isOpen={isOpen}
                 toggle={toggle}
             />
-        </div>
+        </NavbarMain>
     );
 };
 

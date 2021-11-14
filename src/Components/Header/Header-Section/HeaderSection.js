@@ -1,8 +1,10 @@
 import React from 'react';
 import { MdLocationOn } from 'react-icons/md';
 import { FcCalendar } from 'react-icons/fc';
-import { HeaderContainer, HeaderLeftContent, HeaderRightContent, HeaderSpan, HeaderTitle, HeaderTitleSpan, Location, LocationContainer } from '../../Style/Style';
+import { HeaderContainer, HeaderLeftContent, HeaderRightContent, HeaderRightVideo, HeaderSpan, HeaderTitle, HeaderTitleSpan, Location, LocationContainer } from '../../Style/Style';
 import Countdown from './Countdown';
+import video from '../../../img/__Y_A_S_I_R_ _6857805014363049218.mp4';
+import videos from '../../../img/video.mp4';
 
 const HeaderSection = () => {
     return (
@@ -10,12 +12,14 @@ const HeaderSection = () => {
             <article>
                 <HeaderLeftContent>
                     <HeaderSpan className=''>TOUR</HeaderSpan>
+
                     <HeaderTitle>
                         BIGGEST 
                         <HeaderTitleSpan className='headingSpan'>Accounting </HeaderTitleSpan>
                         <HeaderTitleSpan className='headingSpan justify-between'>Department Tour</HeaderTitleSpan>
                         <HeaderTitleSpan >2021</HeaderTitleSpan>
                     </HeaderTitle>
+
                     <LocationContainer>
                         <Location> 
                             <MdLocationOn size={30} style={{color: '#dd2500bd', paddingRight: '2px'}}/>
@@ -26,19 +30,19 @@ const HeaderSection = () => {
                             <date>27 November 2021</date>
                         </Location>
                     </LocationContainer>
+
                     <Countdown/>
                     <button className='primary_BTN '>Buy ticket</button>
+
                 </HeaderLeftContent>
             </article>
             <article>
                 <HeaderRightContent>
-                    <span>DON'T WASTE TIME</span>
-                    <h1>
-                        BIGGEST loss
-                        <span>Accounting  </span>
-                        <span>Department tour </span>
-                        2021
-                    </h1>
+                    <HeaderRightVideo controls >
+                        <source src={videos} type="video/mp4"/>
+                        <source src="movie.ogg" type="video/ogg"/>
+                        Your browser does not support the video tag.
+                    </HeaderRightVideo>
                 </HeaderRightContent>
             </article>
         </HeaderContainer>

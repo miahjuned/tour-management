@@ -21,7 +21,7 @@ const NavbarSection = ({ toggle, closeMobileMenu, isOpen }) => {
 
   return (
     <Fragment>
-      <NavbarContainer role="navigation" style={{backgroundColor:'#022335'}}>
+      <NavbarContainer role="navigation" >
       {/* <NavbarContainer role="navigation"> */}
         <Logo closeMobileMenu={closeMobileMenu} />
 
@@ -37,7 +37,6 @@ const NavbarSection = ({ toggle, closeMobileMenu, isOpen }) => {
           <NavbarUl>
               {
                 Menu.map((item, index) => {
-
                   return (
                     <NavbarLi key={index}>
                       <Link to={item.path} className='navbarLiItem'>
@@ -45,9 +44,16 @@ const NavbarSection = ({ toggle, closeMobileMenu, isOpen }) => {
                       </Link>
                     </NavbarLi>
                     
+                    
                   );
-                })}
-
+                  
+                })
+              }
+              <NavbarLi>
+                <button  className='navbarLiItemBtn'>Buy Ticket</button>
+              </NavbarLi>
+            
+            <SocialMedia />
           <NavbarLi>
               {
                 user.role === "user" &&  <Link to='/user/dashboard'  className='navbarLiItem'>
@@ -72,7 +78,6 @@ const NavbarSection = ({ toggle, closeMobileMenu, isOpen }) => {
           </NavbarLi>
         </NavbarUl>
 
-        <SocialMedia />
       </NavbarContainer>
     </Fragment>
   );

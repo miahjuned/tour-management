@@ -13,7 +13,9 @@ html, body, input{
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
   height:100%; 
-  background-color: #9b6f54;
+  background-color: #EBF0F0;
+  /* background-color: #646e6e; */
+  /* background-color: #f1f7ff; */
 }
 
 *{
