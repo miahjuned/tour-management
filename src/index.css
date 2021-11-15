@@ -28,18 +28,18 @@ html, body, input{
 
  /* width */
  ::-webkit-scrollbar {
-  width: 0px !important;
+  width: 2px !important;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #022335;
+  background: #f1f7ff;
 
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #fff  !important;
+  background: #022335  !important;
 
   border-radius: 2px !important;
 }
@@ -68,7 +68,28 @@ html, body, input{
 .slick-dots li button:before {
   color: #022335 !important;
 }
+/*  color */
+.textPrimary{
+  color: #022335;
+  font-weight: 600;
+}
+
+
 /* button color */
+.primary_white_BTN {
+  color: #dd2400;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.primary_white_BTN:hover {
+  color:#fff;
+  background-color: #dd2400;
+  border: 1px solid #f1f7ff;
+}
 .primary_BTN {
   color: #fff;
   background-color: #dd2400;
@@ -100,7 +121,7 @@ html, body, input{
 
 /* Overlay */
 .Overlay {
-  background-image: url('./img//depImg.jpg');
+  background-image: url('./img/depImg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

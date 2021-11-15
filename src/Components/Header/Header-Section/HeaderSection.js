@@ -3,7 +3,6 @@ import { MdLocationOn } from 'react-icons/md';
 import { FcCalendar } from 'react-icons/fc';
 import { HeaderContainer, HeaderLeftContent, HeaderRightContent, HeaderRightVideo, HeaderSpan, HeaderTitle, HeaderTitleSpan, Location, LocationContainer } from '../../Style/Style';
 import Countdown from './Countdown';
-import video from '../../../img/__Y_A_S_I_R_ _6857805014363049218.mp4';
 import videos from '../../../img/video.mp4';
 
 const HeaderSection = () => {

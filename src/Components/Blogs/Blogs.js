@@ -32,7 +32,7 @@ const Blogs = () => {
                 </AboutOverview>
 
                 <BlogContainer>
-                    { blogs && blogs.map(blog =>
+                    { blogs && blogs.slice(0,6).map(blog =>
                         <BlogPost  key={blog._id} >
                             <div style={{position: "relative"}} >
                                 

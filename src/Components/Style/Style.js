@@ -84,9 +84,32 @@ export const OverlayContent = tw.div`pt-5 flex items-center text-gray-50 font-se
 export const OverlayStrongContent = tw.strong`tracking-tighter text-gray-50 text-3xl font-extrabold `;
 export const OverlayItems = tw.div`text-center`;
 
+
+
 // *************** GALLERY ********************
 export const GALLERYMain = tw.div`grid md:grid-cols-4 grid-cols-2 `;
 export const GALLERYImg = tw.div`w-8/12 bg-red-600`;
+
+
+
+// *************** TESTIMONIAL ********************
+export const TESTIMONIALMain = tw.div`py-4 md:py-12 rounded`;
+export const TESTIMONIALContainer = tw.div`container mx-auto `;
+export const TESTIMONIALWrap = tw.div`flex flex-wrap md:-mx-4 mb-4 w-full`;
+export const TESTIMONIALContent = tw.div`w-full md:px-4 mt-6`;
+export const TESTIMONIALContentWrap = tw.div`rounded p-6 border-2 border-solid flex hover:border-gray-400 hover:bg-indigo-100 transition-colors duration-300 w-full`;
+
+export const TESTIMONIALImgContainer = tw.div`h-20 rounded-full overflow-hidden  flex-shrink-0`;
+export const TESTIMONIALImg = tw.img`w-full h-full object-cover`;
+
+export const TESTIMONIALMobileImgContainer = tw.div`w-12 h-12  rounded-full overflow-hidden  flex-shrink-0  hidden block mr-2`;
+
+
+export const TESTIMONIALContentArea = tw.div`mt-6 md:mt-0 flex items-center`;
+export const TESTIMONIALContentText = tw.p`text-gray-600 h-60 hover:overflow-y-auto overflow-hidden cursor-pointer`;
+export const TESTIMONIALWriter = tw.div`text-gray-900 font-bold uppercase `;
+export const TESTIMONIALWriterTitle = tw.div`text-gray-600`;
+
 
 
 // *************** Blog ********************
@@ -97,8 +120,26 @@ export const BlogPostTitle = tw.div`hover:bg-transparent transition duration-300
 export const BlogPostsCategory = tw.div`cursor-pointer absolute bottom-0 left-0 bg-red-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-red-600 transition duration-500 ease-in-out`;
 export const BlogPostsDate = tw.div`text-sm absolute top-0 right-0 bg-red-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-red-600 transition duration-500 ease-in-out`;
 export const BlogPostsDescriptionContainer = tw.div`px-6 py-4`;
-export const BlogPostsDescription = tw.h3`text-sm absolute top-0 right-0 bg-red-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-red-600 transition duration-500 ease-in-out`;
+export const BlogPostsDescription = tw.h3`cursor-pointer font-semibold text-lg inline-block hover:text-red-600 transition duration-500 ease-in-out`;
 export const BlogPostsShortDescription = tw.p`text-gray-500 text-sm`;
 export const BlogPostsReadingContainer = tw.div`px-6 py-4 flex flex-row items-center`;
 export const BlogPostsReading= tw.span`py-1 text-sm font-normal text-gray-900 mr-1 flex items-center`;
 
+
+// *************** Home page banner ********************
+export const BannerSection = tw.div`my-16 hidden md:block`;
+export const BannerContainer = tw.div`relative container mx-auto`;
+export const BannerRow = tw.div`flex justify-between items-center`;
+export const BannerCol = tw.div`flex-1`;
+export const BannerColImg = tw.div`absolute -top-16`;
+export const BannerColTitle = tw.div`text-center py-12`;
+export const BannerColTitleHeading = tw.h2`font-bold text-3xl md:text-3xl lg:text-4xl font-bold  text-white`;
+
+export const BannerImgContainer = tw.div`w-96 h-96  rounded-lg overflow-hidden  flex-shrink-0  hidden block mr-2`;
+
+
+// Footer
+
+export const FooterRow = tw.div`grid md:grid-cols-4 grid-cols-2 py-5`;
+export const FooterColumn = tw.div`md:grid-cols-4 grid-cols-2 py-5`;
+export const Copyright = tw.div`text-center pb-3`;
