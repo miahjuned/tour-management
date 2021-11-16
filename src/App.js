@@ -5,6 +5,11 @@ import { getAnalytics } from "firebase/analytics";
 import Home from './Pages/Home/Home';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { createContext, useState } from "react";
+import Footer from "./Components/Footer/Footer";
+import Navbar from './Components/Header/Navbar/Navbar/Navbar';
+import BottomBar from './Components/Header/BottomBar/BottomBar';
+
+
 export const userContext = createContext();
 
 function App() {
@@ -19,10 +24,14 @@ function App() {
     <userContext.Provider value={contextData}>
       <Router>
         {/* <SmoothScroll></SmoothScroll> */}
+        
+        <Navbar/>
+        <BottomBar/>
         <Switch>
 
           <Route exact path="/" component={Home} />
           </Switch>
+          <Footer/>
       </Router>
      
     </userContext.Provider>

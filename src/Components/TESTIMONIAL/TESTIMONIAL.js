@@ -52,20 +52,22 @@ const TESTIMONIAL = () => {
         ]
     };
     return (
-        <div>
-            <MainContainer>
-                <div style={{display: 'flex', justifyContent: 'space-evenly', alignItems:'flex-start'}}>
-                    <AboutOverview >
+        <div >
+            <MainContainer >
+                <div className='testimonials' style={{display: 'flex', justifyContent: 'space-evenly', alignItems:'flex-start'}}>
+                    <AboutOverview className='testimonial'>
 
                         <AboutSubTitle> TESTIMONIAL</AboutSubTitle>
                         <AboutSubTitleBottom>People shared their feelings </AboutSubTitleBottom>
                         <AboutSubTitleBottom>about how they are enjoying their trip. </AboutSubTitleBottom>
                         <Underline style={{marginLeft: "40%"}}/>
                     </AboutOverview>
-                    <img width='200px' src={reviewImg} alt='review img'/>
+                    {/* <div>
+                        <img width='200px' src={reviewImg} alt='review img'/>
+                    </div> */}
                 </div>
                 <Slider {...settings} className="px-10 w-9/12">
-                    <TESTIMONIALMain>
+                    <TESTIMONIALMain >
                         <TESTIMONIALContainer>
                             <TESTIMONIALWrap>
 

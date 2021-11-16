@@ -6,7 +6,7 @@ import rightArrow from '../../img/arrows_main-3.1 (1).png';
 
 const About = () => {
     return (
-        <MainContainer>
+        <MainContainer >
             <AboutOverview>
 
                 <AboutSubTitle>
@@ -35,7 +35,8 @@ const About = () => {
                      <AboutSubTitleRight>About the tour</AboutSubTitleRight>
 
                     <AboutTitle >Never Stop To 
-                        <AboutSubTitleHeading>Exploring The Bisnakandi</AboutSubTitleHeading>
+                        <wbr/>
+                        <AboutSubTitleHeading>Exploring The World</AboutSubTitleHeading>
                     </AboutTitle>
                     <AboutBlockQuote>
                         <p style={{paddingTop: "10px"}}>

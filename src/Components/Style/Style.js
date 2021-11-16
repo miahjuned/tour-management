@@ -1,10 +1,10 @@
 import tw from 'twin.macro';
 
 // *************** Global ********************
-export const MainContainer = tw.div` md:px-10 mx-auto px-5 py-16`;
+export const MainContainer = tw.div` md:px-10 mx-auto md:px-5 mx-1 py-16`;
 
 // *************** Navbar ********************
-export const NavbarMain = tw.nav`mx-auto px-5`;
+export const NavbarMain = tw.nav`mx-auto px-5 sticky top-0 z-50`;
 export const NavbarContainer = tw.nav`capitalize  flex justify-between items-center h-16 `;
 
 export const NavbarUl = tw.ul`text-white text-center md:flex items-center hidden`;
@@ -33,7 +33,7 @@ export const BottomBtn= tw.button`w-10 h-10 hover:bg-red-600 px-1 text-white`;
 
 // *************** Header section ********************
 
-export const HeaderContainer = tw.div`grid md:grid-cols-2 grid-cols-1 pt-14 pb-52 md:px-10 md:my-10 mx-auto px-5`;
+export const HeaderContainer = tw.div`grid md:grid-cols-2 grid-cols-1 pt-14 pb-32 md:pb-52 md:px-10  mx-auto px-5`;
 export const HeaderLeftContent = tw.div`uppercase text-white `;
 export const HeaderSpan = tw.span`text-xl font-extrabold`;
 export const HeaderTitle = tw.h1`tracking-tighter text-6xl font-extrabold `;
@@ -44,14 +44,14 @@ export const HeaderRightContent = tw.div`h-full w-full`;
 export const HeaderRightVideo = tw.video`h-full w-full rounded-lg my-5 md:mt-0`;
 // *************** Header section Location ********************
 
-export const LocationContainer = tw.div`w-8/12 flex justify-between items-center pt-5`;
-export const Location = tw.div`flex justify-between items-center`;
+export const LocationContainer = tw.div`md:w-8/12 w-full flex md:justify-between md:items-center pt-5 font-bold `;
+export const Location = tw.div`flex md:justify-between md:items-center `;
 
 // *************** Header section countdown ********************
 
 export const CountdownContainer = tw.div`pb-8 pt-4`;
 export const CountdownTitle = tw.h4`capitalize  text-lg font-bold py-2`;
-export const CountdownTimerContainer = tw.div`flex  text-center text-red-400 `;
+export const CountdownTimerContainer = tw.div`grid md:grid-cols-4 grid-cols-2   text-center text-red-400 `;
 export const CountdownTimer = tw.div`flex-1`;
 export const CountdownTime = tw.h4`text-6xl font-bold items-center uppercase`;
 export const CountdownTimerTitle = tw.p`font-semibold text-gray-400`;
@@ -72,9 +72,9 @@ export const AboutArrowImg = tw.img` w-8/12 h-32`;
 
 export const AboutRightContent = tw.div`pl-5 text-left bg-gray-50 mt-10 md:mt-0`;
 export const AboutSubTitleRight = tw.h2`tracking-tighter capitalize text-gray-800 text-xl font-bold px-3 border-l-2 border-red-600 pb-1`;
-export const AboutTitle = tw.h2`tracking-tighter text-red-600 text-5xl font-extrabold px-3 uppercase`;
+export const AboutTitle = tw.h2`tracking-tighter text-red-600 text-5xl font-extrabold md:px-3 uppercase`;
 export const AboutSubTitleHeading = tw.span`tracking-tighter text-gray-700 text-4xl font-extrabold px-3`;
-export const AboutBlockQuote = tw.blockquote`tracking-tighter px-5 text-lg font-semibold text-gray-600 `;
+export const AboutBlockQuote = tw.blockquote`tracking-tighter md:px-5 text-lg font-semibold text-gray-600 `;
 
 
 
@@ -140,6 +140,8 @@ export const BannerImgContainer = tw.div`w-96 h-96  rounded-lg overflow-hidden  
 
 // Footer
 
-export const FooterRow = tw.div`grid md:grid-cols-4 grid-cols-2 py-5`;
+export const FooterRow = tw.div`grid md:grid-cols-4 grid-cols-2 py-5 `;
 export const FooterColumn = tw.div`md:grid-cols-4 grid-cols-2 py-5`;
+export const FooterSummary = tw.div`md:flex items-center md:pl-0 px-1 justify-evenly border border-gray-300 md:rounded-full rounded-lg`;
+export const FooterSummaryStudentName = tw.p`md:border-r-2 md:pr-2 border-gray-300 border-b-2 md:border-b-0`;
 export const Copyright = tw.div`text-center pb-3`;

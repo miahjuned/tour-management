@@ -1,7 +1,6 @@
 import React from 'react';
 import About from '../../Components/About/About';
 import Blogs from '../../Components/Blogs/Blogs';
-import Footer from '../../Components/Footer/Footer';
 import GALLERY from '../../Components/GALLERY/GALLERY';
 import HeaderMain from '../../Components/Header/Header-main/HeaderMain';
 import HomepageBanner from '../../Components/HomepageBanner/HomepageBanner';
@@ -18,7 +17,6 @@ const Home = () => {
             <TESTIMONIAL/>
             <Blogs/>
             <HomepageBanner/>
-            <Footer/>
         </div>
     );
 };

@@ -4,6 +4,7 @@ import { FcCalendar } from 'react-icons/fc';
 import { HeaderContainer, HeaderLeftContent, HeaderRightContent, HeaderRightVideo, HeaderSpan, HeaderTitle, HeaderTitleSpan, Location, LocationContainer } from '../../Style/Style';
 import Countdown from './Countdown';
 import videos from '../../../img/video.mp4';
+import { FaMapMarkedAlt } from 'react-icons/fa';
 
 const HeaderSection = () => {
     return (
@@ -14,6 +15,7 @@ const HeaderSection = () => {
 
                     <HeaderTitle>
                         BIGGEST 
+                        <wbr/>
                         <HeaderTitleSpan className='headingSpan'>Accounting </HeaderTitleSpan>
                         <HeaderTitleSpan className='headingSpan justify-between'>Department Tour</HeaderTitleSpan>
                         <HeaderTitleSpan >2021</HeaderTitleSpan>
@@ -21,12 +23,12 @@ const HeaderSection = () => {
 
                     <LocationContainer>
                         <Location> 
-                            <MdLocationOn size={30} style={{color: '#f87171', paddingRight: '2px'}}/>
-                            <p>Bisnakandi, Sylhet</p>
+                            <FaMapMarkedAlt size={30} style={{color: '#f87171', paddingRight: '3px', marginTop:'-6px'}}/>
+                            <p>Bisnakandi, Sylhet.</p>
                         </Location>
                         <Location>
                             <FcCalendar size={30} style={{paddingRight: '5px'}}/>
-                            <date>27 November 2021</date>
+                            <date>01 January 2022</date>
                         </Location>
                     </LocationContainer>
 

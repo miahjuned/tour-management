@@ -4,15 +4,19 @@
 }
 .footer-area .menu-title{
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+::marker {
+    color: red;
 }
 .underline{
-    border-bottom: 2px solid #022335;
-    width: 60px;
+    border-bottom: 2px solid #02233571;
+    width: 50%;
 }
 .footer-area li, .menu-item{
     text-decoration: none;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-weight: 600;
     color: #84889F;
     transition: 0.25s;
@@ -51,9 +55,10 @@
 } */
 .footerIcon{
     height: 45px;
-    width: 50px;
+    width: 45px;
     color: #dd2500cc;
     margin: -10px 5px 0 0;
+    
 }
 .copyright p {
     font-weight: 600;

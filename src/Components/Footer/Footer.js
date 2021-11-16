@@ -3,10 +3,11 @@ import FooterCOl from './FooterCol';
 // import {Container, Row } from 'react-bootstrap';
 import './Footer.css';
 import { Copyright, FooterRow, MainContainer } from '../Style/Style';
-import { FaFacebook, FaInstagram, FaTwitterSquare } from 'react-icons/fa';
+import { FaFacebook, FaFacebookMessenger } from 'react-icons/fa';
+import { SiWebflow } from 'react-icons/si';
 
 const Footer = () => {
-    const usefulLink = [
+    const Contact = [
         {year:'Masters',student:"Tareq Ahmed", number:'01700000000'},
         {year:'4th Years', student:"Azharul Islam", number:'01700000000'},
         {year:'3rd Years', student:"Tufayel Ahmed",  number:'01700000000'},
@@ -14,46 +15,53 @@ const Footer = () => {
         {year:'1st Year', student: "Rahin Ahmed", number:'01700000000'},
     ]
     const ourAddress = [
-        {name:"2nd floor Sheikh Hasina building Moulvibazar govt college, court road, Moulvibazar-3200", link: "/google.com", icon: 'map'},
+        {name:"2nd floor Sheikh Hasina building Moulvibazar govt college court road Moulvibazar-3200", icon: 'map'},
+        // {name:"Moulvibazar govt college,"},
+        // {name:"court road, Moulvibazar-3200"}
     ]
-    const oralHealth = [
-        {name:"Emergency Dental Care", link: "/emergency"},
-        {name:"Check Up", link:"/checkup"},
-        {name:"Treatment of Personal Diseases", link:'/personal-disease'},
-        {name:"Tooth Extraction", link: "/tooth-extraction"},
-        {name: "Check Up", link: "/checkup"},
+    const usefulLink = [
+        {name:"About", link: "/about"},
+        {name:"Contact", link:"/contact"},
+        {name:"Blog", link:'/blog'},
+        {name:"Organizer", link: "/organizer"},
     ]
     const info = [
-        {name:"Emergency Dental Care", link: "/emergency"},
-        {name:"Check Up", link:"/checkup"},
-        {name:"Treatment of Personal Diseases", link:'/personal-disease'},
-        {name:"Tooth Extraction", link: "/tooth-extraction"},
-        {name: "Check Up", link: "/checkup"},
+        {name:"Join us", link: "/join-us"},
+        {name:"Buy Ticket", link:"/buy-ticket"},
+        {name:"Privacy & Policy", link:'/privacy-policy'},
+        {name:"Term & Conditions", link: "/term-conditions"},
     ]
     return (
         <footer className='footer-area clear-both'>
             <MainContainer className='pt-5'>
                 <FooterRow>
-                    <FooterCOl key={1} menuTitle={"Contact us"} menuItem={usefulLink}/>
-                    <FooterCOl key={2} menuTitle={"Useful Link"} menuItem={oralHealth}/>
-                    <FooterCOl key={3} menuTitle={"Info"} menuItem={info}/>
-                    <FooterCOl key={4} menuTitle={"Our Address"} menuItem={ourAddress}>
+                    <FooterCOl key={1} menuTitle={"CONTACT US"} menuItem={Contact}/>
+                    <FooterCOl key={3} menuTitle={"EXPLORE"} menuItem={info}/>
+                    <FooterCOl key={2} menuTitle={"USEFUL LINK"} menuItem={usefulLink}/>
+                    <FooterCOl key={4} menuTitle={"OUR ADDRESS"} menuItem={ourAddress}>
                         <ul className='social-media list-inline'>
-                            <li className='list-inline-item'><a href='//facebook.com/zunead1'><FaFacebook className="icon active-icon"/></a></li>
-                            <li className='list-inline-item'><a href='//facebook.com/zunead1'><FaTwitterSquare className="icon active-icon"/></a></li>
-                            <li className='list-inline-item'><a href='//facebook.com/zunead1' rel="noreferrer" target='_blank'><FaInstagram className="icon active-icon"/></a></li>
+                            <li title='Join Facebook Department group'  className='list-inline-item'>
+                                <a href='https://facebook.com/groups/594152293934659'><FaFacebook className="icon active-icon"/></a>
+                            </li>
+                            <li title='Join Messenger tour group' className='list-inline-item'>
+                                <a href='//facebook.com/zunead1'><FaFacebookMessenger className="icon active-icon"/></a>
+                            </li>
+                            <li title='visit College website' className='list-inline-item'>
+                                <a href='https://mbgc.gov.bd' rel="noreferrer" target='_blank'><SiWebflow className="icon active-icon"/></a>
+                            </li>
                         </ul>
                         <div className='mt-5'>
-                            <h6>Website issues Call now</h6>
-                            <button className='primary_BTN'>01700000000</button>
+                            {/* <h6>Website issues Call now</h6> */}
+                            <button title='buy ticket' className='primary_BTN'>Book ticket</button>
                         </div>
                     </FooterCOl>
                 </FooterRow>
                 <Copyright className="copyright">
                     <p>
-                        Let me know if you find any problem- 
+                        Let me know if you find any website problems-
                         <a href='//facebook.com/zunead1' rel="noreferrer" target='_blank' className='Contact'>Contact</a>
                         <br/>
+                        <hr/>
                         Copyright @ {(new Date()).getFullYear()} | All Rights Reserved  
                     </p>
                 </Copyright>
