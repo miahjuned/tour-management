@@ -53,7 +53,7 @@ const TESTIMONIAL = () => {
     };
     return (
         <div >
-            <MainContainer >
+            <MainContainer className='star'>
                 <div className='testimonials' style={{display: 'flex', justifyContent: 'space-evenly', alignItems:'flex-start'}}>
                     <AboutOverview className='testimonial'>
 

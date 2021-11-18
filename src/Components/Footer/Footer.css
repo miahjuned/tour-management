@@ -1,6 +1,7 @@
 .footer-area{
     background-image: url(../../img//footer-bg.png);
     background-size: cover;
+    /* position: absolute; */
 }
 .footer-area .menu-title{
     font-size: 20px;

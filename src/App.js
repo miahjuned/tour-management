@@ -8,6 +8,8 @@ import { createContext, useState } from "react";
 import Footer from "./Components/Footer/Footer";
 import Navbar from './Components/Header/Navbar/Navbar/Navbar';
 import BottomBar from './Components/Header/BottomBar/BottomBar';
+import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
+import Organizer from "./Pages/Organizer/Organizer";
 
 
 export const userContext = createContext();
@@ -30,6 +32,8 @@ function App() {
         <Switch>
 
           <Route exact path="/" component={Home} />
+          <Route exact path="/privacy-policy" component={PrivacyPolicy} />
+          <Route exact path="/organizer" component={Organizer} />
           </Switch>
           <Footer/>
       </Router>

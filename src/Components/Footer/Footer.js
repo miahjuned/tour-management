@@ -32,8 +32,8 @@ const Footer = () => {
         {name:"Term & Conditions", link: "/term-conditions"},
     ]
     return (
-        <footer className='footer-area clear-both'>
-            <MainContainer className='pt-5'>
+        <footer className='footer-area'>
+            <MainContainer className='stars'>
                 <FooterRow>
                     <FooterCOl key={1} menuTitle={"CONTACT US"} menuItem={Contact}/>
                     <FooterCOl key={3} menuTitle={"EXPLORE"} menuItem={info}/>

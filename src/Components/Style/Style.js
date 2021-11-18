@@ -93,11 +93,11 @@ export const GALLERYImg = tw.div`w-8/12 bg-red-600`;
 
 
 // *************** TESTIMONIAL ********************
-export const TESTIMONIALMain = tw.div`py-4 md:py-12 rounded`;
+export const TESTIMONIALMain = tw.div` py-4 md:py-12 rounded`;
 export const TESTIMONIALContainer = tw.div`container mx-auto `;
 export const TESTIMONIALWrap = tw.div`flex flex-wrap md:-mx-4 mb-4 w-full`;
 export const TESTIMONIALContent = tw.div`w-full md:px-4 mt-6`;
-export const TESTIMONIALContentWrap = tw.div`rounded p-6 border-2 border-solid flex hover:border-gray-400 hover:bg-indigo-100 transition-colors duration-300 w-full`;
+export const TESTIMONIALContentWrap = tw.div`bg-white rounded p-6 border border-solid flex hover:border-gray-400 hover:bg-indigo-100 transition-colors duration-300 w-full`;
 
 export const TESTIMONIALImgContainer = tw.div`h-20 rounded-full overflow-hidden  flex-shrink-0`;
 export const TESTIMONIALImg = tw.img`w-full h-full object-cover`;

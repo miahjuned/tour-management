@@ -23,7 +23,7 @@ const Blogs = () => {
       
     return (
         <div>
-            <MainContainer>
+            <MainContainer className='star'>
                 <AboutOverview>
                     <AboutSubTitle> OUR BLOG</AboutSubTitle>
                     <AboutSubTitleBottom>A few words about those who have worked tirelessly</AboutSubTitleBottom>

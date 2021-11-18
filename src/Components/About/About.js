@@ -6,7 +6,7 @@ import rightArrow from '../../img/arrows_main-3.1 (1).png';
 
 const About = () => {
     return (
-        <MainContainer >
+        <MainContainer className='star'>
             <AboutOverview>
 
                 <AboutSubTitle>
@@ -21,7 +21,7 @@ const About = () => {
             {/* <AboutArrow>
                 <AboutArrowImg src={rightArrow} alt='rightArrow'/>
             </AboutArrow> */}
-            <AboutContainer >
+            <AboutContainer className='stars'>
 
                 <AboutLeftContent>
                         <HeaderRightVideo controls >

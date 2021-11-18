@@ -5,7 +5,7 @@ import imgg from '../../img/semi-opened-laptop-computer-turned-on-on-table-20479
 const GALLERY = () => {
     return (
         <div>
-            <MainContainer>
+            <MainContainer className='star'>
                 <AboutOverview>
 
                     <AboutSubTitle> GALLERY</AboutSubTitle>
