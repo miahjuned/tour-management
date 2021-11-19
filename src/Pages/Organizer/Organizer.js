@@ -7,7 +7,6 @@ const Organizer = () => {
     return (
         <MainContainer>
             <TeacherPanel/> 
-
         </MainContainer>
     );
 };
