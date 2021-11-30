@@ -145,3 +145,18 @@ export const FooterColumn = tw.div`md:grid-cols-4 grid-cols-2 py-5`;
 export const FooterSummary = tw.div`md:flex items-center md:pl-0 px-1 justify-evenly border border-gray-300 md:rounded-full rounded-lg`;
 export const FooterSummaryStudentName = tw.p`md:border-r-2 md:pr-2 border-gray-300 border-b-2 md:border-b-0`;
 export const Copyright = tw.div`text-center pb-3`;
+
+
+
+// Registration page
+
+export const SigninContainer = tw.div`grid md:grid-cols-2 grid-cols-1 gap-2 px-8 py-8 bg-white `;
+// export const SigninContainer = tw.div`container mx-auto px-8 py-8 lg:py-24 relative flex flex-col lg:flex-row items-center`;
+
+export const SigninForm = tw.div`shadow-xl p-10 rounded-2xl`;
+export const FormFieldset = tw.fieldset`border border-solid border-gray-300 p-3`;
+export const FormInput = tw.input`rounded-lg bg-red-50 w-full p-2 border outline-none  border-transparent  focus:outline-none focus:border-green-500 text-base font-medium`;
+export const FormLegend = tw.legend`text-sm my-3`;
+export const FormLegendTitle = tw.legend`text-2xl font-bold uppercase text-gray-700`;
+
+export const Select = tw.select`my-2 rounded-lg bg-gray-700 text-white px-2 focus:outline-none`;

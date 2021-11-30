@@ -10,6 +10,7 @@ import Navbar from './Components/Header/Navbar/Navbar/Navbar';
 import BottomBar from './Components/Header/BottomBar/BottomBar';
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 import Organizer from "./Pages/Organizer/Organizer";
+import Registration from "./Components/Registration/Registration";
 
 
 export const userContext = createContext();
@@ -33,6 +34,7 @@ function App() {
 
           <Route exact path="/" component={Home} />
           <Route exact path="/privacy-policy" component={PrivacyPolicy} />
+          <Route exact path="/registrations" component={Registration} />
           <Route exact path="/organizer" component={Organizer} />
           </Switch>
           <Footer/>
