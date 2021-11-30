@@ -5,6 +5,7 @@ import './Footer.css';
 import { Copyright, FooterRow, MainContainer } from '../Style/Style';
 import { FaFacebook, FaFacebookMessenger } from 'react-icons/fa';
 import { SiWebflow } from 'react-icons/si';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const Contact = [
@@ -49,10 +50,10 @@ const Footer = () => {
                             <li title='visit College website' className='list-inline-item'>
                                 <a href='https://mbgc.gov.bd' rel="noreferrer" target='_blank'><SiWebflow className="icon active-icon"/></a>
                             </li>
-                        </ul>
-                        <div className='mt-5'>
+                        </ul> <br/>
+                        <div>
                             {/* <h6>Website issues Call now</h6> */}
-                            <button title='buy ticket' className='primary_BTN'>Book ticket</button>
+                            <Link to='/registrations' className='primary_BTN'>Book ticket</Link>
                         </div>
                     </FooterCOl>
                 </FooterRow>

@@ -22,7 +22,7 @@ const HomepageBanner = () => {
                     </BannerCol>
                     <BannerCol>
                         <BannerColTitle>
-                            <Link to="/shop" className="primary_white_BTN">Register now</Link>
+                            <Link to='/registrations' className="primary_white_BTN">Register now</Link>
                         </BannerColTitle>
                     </BannerCol>
                 </BannerRow>

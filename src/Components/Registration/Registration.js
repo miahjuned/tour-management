@@ -43,7 +43,7 @@ const Registration = () => {
     }
 
     return (
-        <SigninContainer>
+        <SigninContainer className='stars'>
             <SigninForm>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <FormFieldset>

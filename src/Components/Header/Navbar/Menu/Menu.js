@@ -50,7 +50,7 @@ const NavbarSection = ({ toggle, closeMobileMenu, isOpen }) => {
                 })
               }
               <NavbarLi>
-                <button  className='navbarLiItemBtn'>Buy Ticket</button>
+                <Link to='/registrations' className='navbarLiItemBtn'>Buy Ticket</Link>
               </NavbarLi>
             
             <SocialMedia />

@@ -11,6 +11,7 @@ import BottomBar from './Components/Header/BottomBar/BottomBar';
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 import Organizer from "./Pages/Organizer/Organizer";
 import Registration from "./Components/Registration/Registration";
+import SmoothScroll from "./Components/SmoothScroll/SmoothScrool";
 
 
 export const userContext = createContext();
@@ -30,6 +31,7 @@ function App() {
         
         <Navbar/>
         <BottomBar/>
+        <SmoothScroll/>
         <Switch>
 
           <Route exact path="/" component={Home} />
