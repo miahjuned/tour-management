@@ -90,9 +90,12 @@ const Registration = () => {
                             <FormFieldset>
                                 <FormLegend>Select Year</FormLegend>
                                 <Select name="Year" {...register("Year", { required: true})}>
-                                    <optgroup label="Select Year">
-                                        <option value="user">User</option>
-                                        <option value="admin">Admin</option>
+                                    <optgroup label="Select Your Year">
+                                        <option value="Masters">Masters</option>
+                                        <option value="fourthYears">4th Years</option>
+                                        <option value="thirdYears">3rd Years</option>
+                                        <option value="secondYears">2nd Years</option>
+                                        <option value="firstYear">1st Year</option>
                                     </optgroup>
                                 </Select>
                             </FormFieldset>
