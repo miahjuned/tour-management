@@ -1,10 +1,16 @@
 import React from 'react';
+import { DashboardContainer, DashboardMain } from '../../Components/Dashboard/Dashboard CSS/Dashboard_CSS';
+import Sidebar from '../../Components/Dashboard/Sidebar/Sidebar';
 
 const Dashboard = () => {
     return (
-        <div>
-            
-        </div>
+        <DashboardMain>
+            <Sidebar/>
+            <DashboardContainer>
+            Dashboard
+
+            </DashboardContainer>
+        </DashboardMain>
     );
 };
 

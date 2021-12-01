@@ -14,6 +14,7 @@ import Registration from "./Components/Registration/Registration";
 import SmoothScroll from "./Components/SmoothScroll/SmoothScrool";
 import Login from "./Pages/Authentication/Login/Login";
 import Dashboard from "./Pages/Dashboard/Dashboard";
+import RegistrationUser from "./Components/Dashboard/Registration User/RegistrationUser";
 
 
 export const userContext = createContext();
@@ -42,6 +43,7 @@ function App() {
           <Route exact path="/organizer" component={Organizer} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/overview/dashboard" component={Dashboard} />
+          <Route exact path="/user/dashboard" component={RegistrationUser} />
           </Switch>
           <Footer/>
       </Router>
