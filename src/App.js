@@ -12,6 +12,8 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 import Organizer from "./Pages/Organizer/Organizer";
 import Registration from "./Components/Registration/Registration";
 import SmoothScroll from "./Components/SmoothScroll/SmoothScrool";
+import Login from "./Pages/Authentication/Login/Login";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 
 export const userContext = createContext();
@@ -27,17 +29,19 @@ function App() {
   return (
     <userContext.Provider value={contextData}>
       <Router>
-        {/* <SmoothScroll></SmoothScroll> */}
+        <SmoothScroll></SmoothScroll>
         
         <Navbar/>
         <BottomBar/>
-        <SmoothScroll/>
+        {/* <SmoothScroll/> */}
         <Switch>
 
           <Route exact path="/" component={Home} />
           <Route exact path="/privacy-policy" component={PrivacyPolicy} />
           <Route exact path="/registrations" component={Registration} />
           <Route exact path="/organizer" component={Organizer} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/overview/dashboard" component={Dashboard} />
           </Switch>
           <Footer/>
       </Router>

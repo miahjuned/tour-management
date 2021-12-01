@@ -1,8 +1,6 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import React, { useContext, useState } from "react";
-import { AiFillGithub } from "react-icons/ai";
-import { FcGoogle } from 'react-icons/fc';
 import { useHistory, useLocation } from "react-router";
 import { Link } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
@@ -10,12 +8,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import { userContext } from "../../../App.js";
 import loginsvg from '../../../img/signup_welcome_cats_thqn.svg';
 import {firebaseConfig} from "../../../firebase.config";
-import './Signin.css';
-import {SigninContainer, SigninCreateAccount, SigninFooter, SigninSocialBtn, SigninForm} from './Signin_CSS.js';
-import {FormFieldset, FormLegendTitle, FormInput, FormLegend} from '../../Tab/Feature_Requests/FeatureRequests_CSS.js';
-import { getAuth, signInWithPopup, GithubAuthProvider, GoogleAuthProvide } from "firebase/auth";
 
 import { useForm } from 'react-hook-form';
+import { FormFieldset, FormInput, FormLegend, FormLegendTitle, SigninContainer, SigninForm } from "../../../Components/Style/Style.js";
 // import { toast } from 'react-toastify';
 
 if (!firebase.apps.length) {
@@ -26,70 +21,11 @@ if (!firebase.apps.length) {
 
 
 const Login = () => {
-    const auth = getAuth();
     let history = useHistory();
     let location = useLocation();
     const { register, handleSubmit, formState: { errors } } = useForm();
-    let { from } = location.state || { from: { pathname: "/" } };
+    let { from } = location.state || { from: { pathEmail: "/" } };
     const { user, setUser } = useContext(userContext);
-    const googleProvider = new firebase.auth.GoogleAuthProvider();
-    const gitProvider = new firebase.auth.GithubAuthProvider();
-
-
-    const handleUserCreate = (data) => {
-        const userDetail = { 
-            name: data.displayName,
-            email: data.email,
-            password: '10203040',
-            img: data.photoURL
-        }
-        console.log(userDetail)
-        fetch('https://sorting-functionality-authlab.herokuapp.com/user/register-user', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(userDetail)
-        })
-        .then(res => res.json())
-        .then(user => {
-            onSubmit(userDetail)
-        })
-        .catch(err => {
-            console.log(err)
-        }) 
-    }
-
-    // Google sign in
-    const handleGoogleLogin = () => {
-           signInWithPopup(auth, googleProvider)
-             .then((result) => {
-                handleUserCreate(result.user);
-                // setUser(result.user)
-                sessionStorage.setItem("user", JSON.stringify(result.user));
-                history.replace(from);
-            })
-            .catch((error) => {
-                toast.warning(error, {
-                    position: "bottom-right",
-                });
-            });
-    };
-
-    // Github sign in
-    const handleGitLogin = () => {
-        signInWithPopup(auth, gitProvider)
-        .then((result) => {
-            handleUserCreate(result.user);
-            // setUser(result.user)
-            sessionStorage.setItem("user", JSON.stringify(result.user));
-            history.replace(from);
-        }).catch((error) => {
-            toast.warning(error, {
-                position: "bottom-right",
-            });
-        });
-    }
 
 
     const onSubmit = (data) => {
@@ -137,13 +73,23 @@ const Login = () => {
                             <FormLegendTitle>Login</FormLegendTitle>
 
                             <div>
-                                <FormLegend>Email</FormLegend>
-                                <FormInput name="email" type="text" placeholder="email" {...register("email", {required: true})}/>
-                                <span style={{color:"red"}}>{errors.email?.type === 'required' && "email is required"}</span>
-                                
-                                <FormLegend>Password</FormLegend>
-                                <FormInput name="password" type="password" placeholder="password" {...register("password", {required: true})}/>
-                                <span style={{color:"red"}}>{errors.password?.type === 'required' && "password is required"}</span>
+                                <FormLegend>Email:</FormLegend>
+                                <FormInput Email="Email" type="text" placeholder="Email" 
+                                {...register("Email", { required: true, maxLength: 20, pattern: /^[A-Za-z]+$/i})}/>
+                                <span style={{color:"red"}}>
+                                    {errors.Email?.type === 'required' && "Email is required"}
+                                    {errors?.Email?.type === "maxLength" && 'First Email cannot exceed 20 characters'}
+                                    {errors?.Email?.type === "pattern" && 'Alphabetical characters only'}
+                                </span>
+
+                                <FormLegend>Password:</FormLegend>
+                                <FormInput Email="Password" type="password" placeholder="Password.." 
+                                {...register("Password", { required: true, maxLength: 20, pattern: /^[A-Za-z]+$/i})}/>
+                                <span style={{color:"red"}}>
+                                    {errors.Password?.type === 'required' && "Password is required"}
+                                    {errors?.Password?.type === "maxLength" && 'First Email cannot exceed 20 characters'}
+                                    {errors?.Password?.type === "pattern" && 'Alphabetical characters only'}
+                                </span>
                             </div>
                             
                             <label className="submitBtnAnimation">
@@ -156,44 +102,6 @@ const Login = () => {
 
                         </FormFieldset>
                     </form>
-
-
-                    <SigninFooter>
-                        <SigninCreateAccount>
-                            <h4>Don't have an account?</h4>
-                            <Link to="/register" style={{ color: "#4f46e5" }}>
-                                Create an account
-                            </Link>
-                        </SigninCreateAccount>
-                        <SigninSocialBtn onClick={handleGoogleLogin} >
-                        <h1>Google </h1>
-                            <span>
-                                <FcGoogle />
-                            </span>
-                        </SigninSocialBtn>
-                        <SigninSocialBtn onClick={handleGitLogin}>
-                        <h1>Github </h1>
-                            <span>
-                                <AiFillGithub />
-                            </span>
-                        </SigninSocialBtn>
-                    </SigninFooter>
-                    <div style={{ margin: '20px', padding:'20px'}}>
-                        
-                    <strong>Login info</strong>
-                        <ol style={{display: 'flex', padding:'20px'}}>
-                            <li style={{paddingRight:'20px'}}>
-                                <strong>User:</strong>
-                                <p >User@gmail.com</p>
-                                <p>10203040</p>
-                            </li>
-                            <li >
-                                <strong>Admin:</strong>
-                                <p >admin@gmail.com</p>
-                                <p>10203040</p>
-                            </li>
-                        </ol>
-                    </div>
                 </SigninForm>
                 <div>
                     <img src={loginsvg} alt="lioigiiin" />
